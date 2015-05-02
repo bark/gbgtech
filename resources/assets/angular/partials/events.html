@@ -1,7 +1,6 @@
 <div ng-repeat="event in events.data">
 	<h1>{{event.summary}}</h1>
 	<p style="white-space: pre;">{{event.description}}</p>
-	<small>{{event.author}}</small>
-	<small>{{event.things.start_date | date: "HH:mm:ss"}}</small>
-    asd
+	<small><a href="mailto:{{event.things.creator.email}}">{{event.things.creator.displayName}}</a></small>
+	<small>{{event.things.start.dateTime | date: "dd MMMM"}} {{event.things.start.dateTime | date: "HH:mm"}} - {{event.things.end.dateTime | date: "HH:mm"}}</small>
 </div>

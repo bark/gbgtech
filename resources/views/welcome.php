@@ -41,13 +41,14 @@
     <!-- Scripts -->
         <script src="/js/vendor.js"></script>
         <script src="/js/app.js"></script>
+        <script src="/templates.js"></script>
 		<div class="container">
 			<div class="content">
 				<div class="title">Laravel 5</div>
 			</div>
 		</div>
 		<div ng-controller="GbgTechController">
-			{{calendar}}
+			<div ng-include="'/js/partials/events.html'"></div>
 		</div>
 	</body>
 </html>
