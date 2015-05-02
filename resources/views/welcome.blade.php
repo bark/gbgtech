@@ -38,6 +38,9 @@
 		</style>
 	</head>
 	<body>
+    <!-- Scripts -->
+        <script src="{{ asset('/js/vendor.js') }}"></script>
+        <script src="{{ asset('/js/app.js') }}"></script>
 		<div class="container">
 			<div class="content">
 				<div class="title">Laravel 5</div>
