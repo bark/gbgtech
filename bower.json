@@ -2,6 +2,8 @@
   "name": "gbghack",
   "dependencies": {
     "bootstrap": "~3.3.4",
-    "jquery": "~2.1.4"
+    "jquery": "~2.1.4",
+    "ngGAPI": "https://github.com/christiansmith/ngGAPI.git",
+    "angular": "~1.3.15"
   }
 }
