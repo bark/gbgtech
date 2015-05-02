@@ -24,7 +24,8 @@ elixir(function(mix) {
         '../assets/bower/angular/angular.js',
         '../assets/bower/ngGAPI/gapi.js'
     ], 'public/js/vendor.js');
-
+    mix.copy('resources/assets/angular/partials', 'public/partials');
+    mix.copy('resources/assets/angular/template', 'public/template');
     mix.less("app.less");
 
 });
