@@ -10,17 +10,6 @@ abstract class Controller extends BaseController {
 
 	use DispatchesCommands, ValidatesRequests;
 
-    public function addEmail(){
-        $email=Input::get('email');
-        $jsonEmailPreferences=Input::get('jsonCattegorys');
-        $user=new User(["email"=>$email]);
-        $emailPreferences=json_decode( $jsonEmailPreferences);
-        //for($emailPreferences as )
-
-    }
-    public function getListOfCategories(){
-        return Categorie::all();
-    }
 
 
 

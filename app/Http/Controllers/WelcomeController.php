@@ -2,6 +2,7 @@
 
 use Config;
 use Cache;
+use Category;
 class WelcomeController extends Controller {
 
 	/*
@@ -35,6 +36,19 @@ class WelcomeController extends Controller {
 
 		return view('welcome');
 	}
+
+    public function addEmail(){
+        $email=Input::get('email');
+        $jsonEmailPreferences=Input::get('jsonCattegorys');
+        $user=new User(["email"=>$email]);
+        $emailPreferences=json_decode( $jsonEmailPreferences);
+        //for($emailPreferences as )
+
+    }
+    public function getListOfCategories(){
+        return Category::all();
+    }
+
     public function getListOfEvents(){
         /* Get config variables */
         $client_id = Config::get('google.client_id');
@@ -68,5 +82,7 @@ class WelcomeController extends Controller {
         $results = $this->service->events->listEvents("6e77ksd17iuk82r0j0t7bjdbe8@group.calendar.google.com");
         echo json_encode($results->getItems());
     }
+
+
 
 }

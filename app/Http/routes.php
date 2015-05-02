@@ -12,7 +12,9 @@
 */
 
 Route::get('/', 'WelcomeController@index');
+
 Route::get('/getListOfEvents', 'WelcomeController@getListOfEvents');
+Route::get('/getListOfCategories', 'WelcomeController@getListOfCategories');
 
 
 Route::get('home', 'HomeController@index');
