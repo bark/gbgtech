@@ -1,0 +1,1 @@
+var gbgtech = angular.module('gbgtech', []);
