@@ -13,7 +13,7 @@ var elixir = require('laravel-elixir');
 
 
 require('laravel-elixir-angular');
-
+require('laravel-elixir-angular-templatecache');
 
 
 elixir(function(mix) {
@@ -23,8 +23,7 @@ elixir(function(mix) {
         '../assets/bower/bootstrap/dist/js/bootstrap.js',
         '../assets/bower/angular/angular.js'
     ], 'public/js/vendor.js');
-    mix.copy('resources/assets/angular/partials', 'public/partials');
-    mix.copy('resources/assets/angular/template', 'public/template');
+    mix.angulartemplatecache('app', 'resources/assets/js/**/*.html', 'public');
     mix.less("app.less");
 
 });

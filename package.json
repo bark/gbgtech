@@ -6,6 +6,7 @@
     "laravel-elixir": "*"
   },
   "dependencies": {
-    "laravel-elixir-angular": "^0.1.1"
+    "laravel-elixir-angular": "^0.1.1",
+    "laravel-elixir-angular-templatecache": "^0.1.2"
   }
 }
