@@ -21,8 +21,7 @@ elixir(function(mix) {
     mix.scripts([
         '../assets/bower/jquery/dist/jquery.js',
         '../assets/bower/bootstrap/dist/js/bootstrap.js',
-        '../assets/bower/angular/angular.js',
-        '../assets/bower/ngGAPI/gapi.js'
+        '../assets/bower/angular/angular.js'
     ], 'public/js/vendor.js');
     mix.copy('resources/assets/angular/partials', 'public/partials');
     mix.copy('resources/assets/angular/template', 'public/template');
