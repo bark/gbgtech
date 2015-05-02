@@ -23,7 +23,7 @@ elixir(function(mix) {
         '../assets/bower/bootstrap/dist/js/bootstrap.js',
         '../assets/bower/angular/angular.js'
     ], 'public/js/vendor.js');
-    mix.angulartemplatecache('app', 'resources/assets/js/**/*.html', 'public');
+    mix.angulartemplatecache('app', 'resources/assets/angular/**/*.html', 'public');
     mix.less("app.less");
 
 });
